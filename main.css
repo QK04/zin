@@ -1,0 +1,208 @@
+
+body {
+    background-image: url('https://hainh2k3.com/wp-content/uploads/2018/11/Random-Pure-CSS-Parallax-Stars.gif');
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+/*card */
+.card {
+    width: 31em;
+    height: 39em;
+    background: #ffffff;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: auto;
+  }
+
+ul {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.card span {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+    padding-top: 0.1em;
+    font-size: 1.4em;
+}
+  
+.card .info {
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: center;
+    padding-top: 0.1em;
+    font-size: 4em;
+    margin: 3em;
+    margin-top: 1em;
+}
+  
+
+.card .img {
+    width: 7em;
+    height: 7em;
+    background-image: url('321297322_5762407253807979_3959255581200353233_n.png');
+    background-position: 50% 0;
+    background-size: cover;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+  /* social */
+.car svg {
+    height: 30px;
+}
+  
+.car {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 0.1em;
+    margin-bottom: 1em;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    height: 60px;
+    width: 200px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+  
+.car::before, .car::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: 0.25s linear;
+    z-index: 1;
+}
+  
+.car::before {
+    content: "";
+    left: 0;
+    justify-content: flex-end;
+    background-color: #4d60b6;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+  
+.car::after {
+    content: "";
+    right: 0;
+    justify-content: flex-start;
+    background-color: #4453a6;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  
+.car:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+  
+.car:hover span {
+    opacity: 0;
+    z-index: -3;
+}
+  
+.car:hover::before {
+    opacity: 0.5;
+    transform: translateY(-100%);
+}
+  
+.car:hover::after {
+    opacity: 0.5;
+    transform: translateY(100%);
+}
+  
+.car span {
+    position: absolute;
+    display: flex;
+    margin-top: -0.1em;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    font-family: 'Fira Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+}
+  
+.car .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+  
+.car .social-link svg {
+    text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+    transform: scale(1);
+}
+  
+.car .social-link:hover {
+    background-color: rgba(249, 244, 255, 0.774);
+    animation: bounce_613 0.4s linear;
+}
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+/* photo */
+.kodfun-galeri {
+    display: flex;
+    height: 20rem;
+    gap: 2rem;
+}
+
+.kodfun-galeri > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    text-align: center;
+}
+
+.kodfun-galeri > div:hover {
+    flex: 5;
+}
